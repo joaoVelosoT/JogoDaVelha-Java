@@ -18,7 +18,10 @@ public class Tabuleiro {
 	public void montarTabuleiro() {
 		System.out.println("JOGO DA VELHA");
 		System.out.println("-------------------------");
+		System.out.println("   0  1  2");
+
 		for (int i = 0; i < this.tabuleiro.length; i++) {
+			System.out.print(i + " ");
 			for (int j = 0; j < this.tabuleiro[1].length; j++) {
 				this.tabuleiro[i][j] = "[_]";
 				System.out.print(this.tabuleiro[i][j]);
@@ -28,7 +31,9 @@ public class Tabuleiro {
 	}
 
 	public void mostrarTabuleiro() {
+		System.out.println("   0  1  2");
 		for (int i = 0; i < this.tabuleiro.length; i++) {
+			System.out.print(i + " ");
 			for (int j = 0; j < this.tabuleiro[1].length; j++) {
 				System.out.print(this.tabuleiro[i][j]);
 			}
