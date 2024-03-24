@@ -65,26 +65,32 @@ public class Tabuleiro {
 		System.out.println("");
 	}
 
-	public void verificarJogada() {
-
+	public boolean verificarJogada() {
+		boolean ganhou = false;
 		// LINHA
-
 		if (this.tabuleiro[0][0] == "[X]" && this.tabuleiro[0][1] == "[X]" && this.tabuleiro[0][2] == "[X]") {
+			System.out.println("");
 			System.out.println("X GANHOU");
+			ganhou = true;
 			System.out.println("");
 			montarTabuleiro();
 			sc.nextLine();
 			// limparTela();
 		}
+
 		if (this.tabuleiro[1][0] == "[X]" && this.tabuleiro[1][1] == "[X]" && this.tabuleiro[1][2] == "[X]") {
+			System.out.println("");
 			System.out.println("X GANHOU");
+			ganhou = true;
 			System.out.println("");
 			montarTabuleiro();
 			sc.nextLine();
 			// limparTela();
 		}
+
 		if (this.tabuleiro[2][0] == "[X]" && this.tabuleiro[2][1] == "[X]" && this.tabuleiro[2][2] == "[X]") {
 			System.out.println("X GANHOU");
+			ganhou = true;
 			System.out.println("");
 			montarTabuleiro();
 			sc.nextLine();
@@ -94,7 +100,9 @@ public class Tabuleiro {
 		// COLUNA
 
 		if (this.tabuleiro[0][0] == "[X]" && this.tabuleiro[1][0] == "[X]" && this.tabuleiro[2][0] == "[X]") {
+			System.out.println("");
 			System.out.println("X GANHOU");
+			ganhou = true;
 			System.out.println("");
 			montarTabuleiro();
 			sc.nextLine();
@@ -102,7 +110,9 @@ public class Tabuleiro {
 		}
 
 		if (this.tabuleiro[0][1] == "[X]" && this.tabuleiro[1][1] == "[X]" && this.tabuleiro[2][1] == "[X]") {
+			System.out.println("");
 			System.out.println("X GANHOU");
+			ganhou = true;
 			System.out.println("");
 			montarTabuleiro();
 			sc.nextLine();
@@ -110,7 +120,9 @@ public class Tabuleiro {
 		}
 
 		if (this.tabuleiro[0][2] == "[X]" && this.tabuleiro[1][2] == "[X]" && this.tabuleiro[2][2] == "[X]") {
+			System.out.println("");
 			System.out.println("X GANHOU");
+			ganhou = true;
 			System.out.println("");
 			montarTabuleiro();
 			sc.nextLine();
@@ -120,7 +132,9 @@ public class Tabuleiro {
 		// DIAGONAL
 
 		if (this.tabuleiro[0][0] == "[X]" && this.tabuleiro[1][1] == "[X]" && this.tabuleiro[2][2] == "[X]") {
+			System.out.println("");
 			System.out.println("X GANHOU");
+			ganhou = true;
 			System.out.println("");
 			montarTabuleiro();
 			sc.nextLine();
@@ -128,7 +142,9 @@ public class Tabuleiro {
 		}
 
 		if (this.tabuleiro[0][2] == "[X]" && this.tabuleiro[1][1] == "[X]" && this.tabuleiro[2][0] == "[X]") {
+			System.out.println("");
 			System.out.println("X GANHOU");
+			ganhou = true;
 			System.out.println("");
 			montarTabuleiro();
 			sc.nextLine();
@@ -138,21 +154,27 @@ public class Tabuleiro {
 		// LINHA
 
 		if (this.tabuleiro[0][0] == "[O]" && this.tabuleiro[0][1] == "[O]" && this.tabuleiro[0][2] == "[O]") {
+			System.out.println("");
 			System.out.println("BOLINHA GANHOU");
+			ganhou = true;
 			System.out.println("");
 			montarTabuleiro();
 			sc.nextLine();
 			// limparTela();
 		}
 		if (this.tabuleiro[1][0] == "[O]" && this.tabuleiro[1][1] == "[O]" && this.tabuleiro[1][2] == "[O]") {
+			System.out.println("");
 			System.out.println("BOLINHA GANHOU");
+			ganhou = true;
 			System.out.println("");
 			montarTabuleiro();
 			sc.nextLine();
 			// limparTela();
 		}
 		if (this.tabuleiro[2][0] == "[O]" && this.tabuleiro[2][1] == "[O]" && this.tabuleiro[2][2] == "[O]") {
+			System.out.println("");
 			System.out.println("BOLINHA GANHOU");
+			ganhou = true;
 			System.out.println("");
 			montarTabuleiro();
 			sc.nextLine();
@@ -162,7 +184,9 @@ public class Tabuleiro {
 		// COLUNA
 
 		if (this.tabuleiro[0][0] == "[O]" && this.tabuleiro[1][0] == "[O]" && this.tabuleiro[2][0] == "[O]") {
+			System.out.println("");
 			System.out.println("BOLINHA GANHOU");
+			ganhou = true;
 			System.out.println("");
 			montarTabuleiro();
 			sc.nextLine();
@@ -170,7 +194,9 @@ public class Tabuleiro {
 		}
 
 		if (this.tabuleiro[0][1] == "[O]" && this.tabuleiro[1][1] == "[O]" && this.tabuleiro[2][1] == "[O]") {
+			System.out.println("");
 			System.out.println("BOLINHA GANHOU");
+			ganhou = true;
 			System.out.println("");
 			montarTabuleiro();
 			sc.nextLine();
@@ -178,7 +204,9 @@ public class Tabuleiro {
 		}
 
 		if (this.tabuleiro[0][2] == "[O]" && this.tabuleiro[1][2] == "[O]" && this.tabuleiro[2][2] == "[O]") {
+			System.out.println("");
 			System.out.println("BOLINHA GANHOU");
+			ganhou = true;
 			System.out.println("");
 			montarTabuleiro();
 			sc.nextLine();
@@ -188,7 +216,9 @@ public class Tabuleiro {
 		// DIAGONAL
 
 		if (this.tabuleiro[0][0] == "[O]" && this.tabuleiro[1][1] == "[O]" && this.tabuleiro[2][2] == "[O]") {
+			System.out.println("");
 			System.out.println("BOLINHA GANHOU");
+			ganhou = true;
 			System.out.println("");
 			montarTabuleiro();
 			sc.nextLine();
@@ -196,16 +226,20 @@ public class Tabuleiro {
 		}
 
 		if (this.tabuleiro[0][2] == "[O]" && this.tabuleiro[1][1] == "[O]" && this.tabuleiro[2][0] == "[O]") {
+			System.out.println("");
 			System.out.println("BOLINHA GANHOU");
+			ganhou = true;
 			System.out.println("");
 			montarTabuleiro();
 			sc.nextLine();
 			// limparTela();
+
 		}
+		return ganhou;
 
 	}
 
-	public void jogada1() {
+	public void jogadaTesteX() {
 
 		boolean verificar = false;
 		boolean verificarLinha = false;
@@ -249,25 +283,28 @@ public class Tabuleiro {
 			if (this.tabuleiro[linha][coluna] == null || this.tabuleiro[linha][coluna].equals("[_]")) {
 				this.tabuleiro[linha][coluna] = "[X]";
 				mostrarTabuleiro();
-				verificarJogada();
+				// verificarJogada();
+
 				verificar = true;
 			} else {
+				sc.nextLine();
 				System.out.println("Esse campo ja foi usado");
+				verificarLinha = false;
+				verificarColuna = false;
 			}
 
 		}
 	}
 
-	public void jogada2() {
+	public void jogadaTesteO() {
 
 		boolean verificar = false;
+		boolean verificarLinha = false;
+		boolean verificarColuna = false;
+		int linha = 0;
+		int coluna = 0;
 
 		while (verificar == false) {
-			boolean verificarLinha = false;
-			boolean verificarColuna = false;
-			int linha = 0;
-			int coluna = 0;
-
 			while (verificarLinha == false) {
 				System.out.println("Digite a linha");
 				try {
@@ -303,411 +340,13 @@ public class Tabuleiro {
 			if (this.tabuleiro[linha][coluna] == null || this.tabuleiro[linha][coluna].equals("[_]")) {
 				this.tabuleiro[linha][coluna] = "[O]";
 				mostrarTabuleiro();
-				verificarJogada();
+				// verificarJogada();
 				verificar = true;
 			} else {
-				System.out.println("Esse campo ja foi usado");
-
 				sc.nextLine();
-
-			}
-
-		}
-	}
-
-	public void jogada3() {
-
-		boolean verificar = false;
-
-		while (verificar == false) {
-			boolean verificarLinha = false;
-			boolean verificarColuna = false;
-			int linha = 0;
-			int coluna = 0;
-
-			while (verificarLinha == false) {
-				System.out.println("Digite a linha");
-				try {
-					linha = sc.nextInt();
-					if (linha > 2 || linha < 0) {
-						System.err.println("Digite um valor de 0 a 2");
-					} else {
-						verificarLinha = true;
-					}
-				} catch (Exception e) {
-					System.err.println("Digite um valor numerico");
-					sc.nextLine();
-				}
-
-			}
-
-			while (verificarColuna == false) {
-				System.out.println("Digite a Coluna");
-				try {
-					coluna = sc.nextInt();
-					if (coluna > 2 || coluna < 0) {
-						System.err.println("Digite um valor de 0 a 2");
-					} else {
-						verificarColuna = true;
-					}
-				} catch (Exception e) {
-					System.err.println("Digite um valor numerico");
-					sc.nextLine();
-				}
-
-			}
-
-			if (this.tabuleiro[linha][coluna] == null || this.tabuleiro[linha][coluna].equals("[_]")) {
-				this.tabuleiro[linha][coluna] = "[X]";
-				mostrarTabuleiro();
-				verificarJogada();
-				verificar = true;
-			} else {
 				System.out.println("Esse campo ja foi usado");
-
-				sc.nextLine();
-
-			}
-
-		}
-	}
-
-	public void jogada4() {
-
-		boolean verificar = false;
-
-		while (verificar == false) {
-			boolean verificarLinha = false;
-			boolean verificarColuna = false;
-			int linha = 0;
-			int coluna = 0;
-
-			while (verificarLinha == false) {
-				System.out.println("Digite a linha");
-				try {
-					linha = sc.nextInt();
-					if (linha > 2 || linha < 0) {
-						System.err.println("Digite um valor de 0 a 2");
-					} else {
-						verificarLinha = true;
-					}
-				} catch (Exception e) {
-					System.err.println("Digite um valor numerico");
-					sc.nextLine();
-				}
-
-			}
-
-			while (verificarColuna == false) {
-				System.out.println("Digite a Coluna");
-				try {
-					coluna = sc.nextInt();
-					if (coluna > 2 || coluna < 0) {
-						System.err.println("Digite um valor de 0 a 2");
-					} else {
-						verificarColuna = true;
-					}
-				} catch (Exception e) {
-					System.err.println("Digite um valor numerico");
-					sc.nextLine();
-				}
-
-			}
-
-			if (this.tabuleiro[linha][coluna] == null || this.tabuleiro[linha][coluna].equals("[_]")) {
-				this.tabuleiro[linha][coluna] = "[O]";
-				mostrarTabuleiro();
-				verificarJogada();
-				verificar = true;
-			} else {
-				System.out.println("Esse campo ja foi usado");
-
-				sc.nextLine();
-
-			}
-
-		}
-	}
-
-	public void jogada5() {
-
-		boolean verificar = false;
-
-		while (verificar == false) {
-			boolean verificarLinha = false;
-			boolean verificarColuna = false;
-			int linha = 0;
-			int coluna = 0;
-
-			while (verificarLinha == false) {
-				System.out.println("Digite a linha");
-				try {
-					linha = sc.nextInt();
-					if (linha > 2 || linha < 0) {
-						System.err.println("Digite um valor de 0 a 2");
-					} else {
-						verificarLinha = true;
-					}
-				} catch (Exception e) {
-					System.err.println("Digite um valor numerico");
-					sc.nextLine();
-				}
-
-			}
-
-			while (verificarColuna == false) {
-				System.out.println("Digite a Coluna");
-				try {
-					coluna = sc.nextInt();
-					if (coluna > 2 || coluna < 0) {
-						System.err.println("Digite um valor de 0 a 2");
-					} else {
-						verificarColuna = true;
-					}
-				} catch (Exception e) {
-					System.err.println("Digite um valor numerico");
-					sc.nextLine();
-				}
-
-			}
-
-			if (this.tabuleiro[linha][coluna] == null || this.tabuleiro[linha][coluna].equals("[_]")) {
-				this.tabuleiro[linha][coluna] = "[X]";
-				mostrarTabuleiro();
-				verificarJogada();
-				verificar = true;
-			} else {
-				System.out.println("Esse campo ja foi usado");
-
-				sc.nextLine();
-
-			}
-
-		}
-	}
-
-	public void jogada6() {
-
-		boolean verificar = false;
-
-		while (verificar == false) {
-			boolean verificarLinha = false;
-			boolean verificarColuna = false;
-			int linha = 0;
-			int coluna = 0;
-
-			while (verificarLinha == false) {
-				System.out.println("Digite a linha");
-				try {
-					linha = sc.nextInt();
-					if (linha > 2 || linha < 0) {
-						System.err.println("Digite um valor de 0 a 2");
-					} else {
-						verificarLinha = true;
-					}
-				} catch (Exception e) {
-					System.err.println("Digite um valor numerico");
-					sc.nextLine();
-				}
-
-			}
-
-			while (verificarColuna == false) {
-				System.out.println("Digite a Coluna");
-				try {
-					coluna = sc.nextInt();
-					if (coluna > 2 || coluna < 0) {
-						System.err.println("Digite um valor de 0 a 2");
-					} else {
-						verificarColuna = true;
-					}
-				} catch (Exception e) {
-					System.err.println("Digite um valor numerico");
-					sc.nextLine();
-				}
-
-			}
-
-			if (this.tabuleiro[linha][coluna] == null || this.tabuleiro[linha][coluna].equals("[_]")) {
-				this.tabuleiro[linha][coluna] = "[O]";
-				mostrarTabuleiro();
-				verificarJogada();
-				verificar = true;
-			} else {
-				System.out.println("Esse campo ja foi usado");
-
-				sc.nextLine();
-
-			}
-
-		}
-	}
-
-	public void jogada7() {
-
-		boolean verificar = false;
-
-		while (verificar == false) {
-			boolean verificarLinha = false;
-			boolean verificarColuna = false;
-			int linha = 0;
-			int coluna = 0;
-
-			while (verificarLinha == false) {
-				System.out.println("Digite a linha");
-				try {
-					linha = sc.nextInt();
-					if (linha > 2 || linha < 0) {
-						System.err.println("Digite um valor de 0 a 2");
-					} else {
-						verificarLinha = true;
-					}
-				} catch (Exception e) {
-					System.err.println("Digite um valor numerico");
-					sc.nextLine();
-				}
-
-			}
-
-			while (verificarColuna == false) {
-				System.out.println("Digite a Coluna");
-				try {
-					coluna = sc.nextInt();
-					if (coluna > 2 || coluna < 0) {
-						System.err.println("Digite um valor de 0 a 2");
-					} else {
-						verificarColuna = true;
-					}
-				} catch (Exception e) {
-					System.err.println("Digite um valor numerico");
-					sc.nextLine();
-				}
-
-			}
-
-			if (this.tabuleiro[linha][coluna] == null || this.tabuleiro[linha][coluna].equals("[_]")) {
-				this.tabuleiro[linha][coluna] = "[X]";
-				mostrarTabuleiro();
-				verificarJogada();
-				verificar = true;
-			} else {
-				System.out.println("Esse campo ja foi usado");
-
-				sc.nextLine();
-
-			}
-
-		}
-	}
-
-	public void jogada8() {
-
-		boolean verificar = false;
-
-		while (verificar == false) {
-			boolean verificarLinha = false;
-			boolean verificarColuna = false;
-			int linha = 0;
-			int coluna = 0;
-
-			while (verificarLinha == false) {
-				System.out.println("Digite a linha");
-				try {
-					linha = sc.nextInt();
-					if (linha > 2 || linha < 0) {
-						System.err.println("Digite um valor de 0 a 2");
-					} else {
-						verificarLinha = true;
-					}
-				} catch (Exception e) {
-					System.err.println("Digite um valor numerico");
-					sc.nextLine();
-				}
-
-			}
-
-			while (verificarColuna == false) {
-				System.out.println("Digite a Coluna");
-				try {
-					coluna = sc.nextInt();
-					if (coluna > 2 || coluna < 0) {
-						System.err.println("Digite um valor de 0 a 2");
-					} else {
-						verificarColuna = true;
-					}
-				} catch (Exception e) {
-					System.err.println("Digite um valor numerico");
-					sc.nextLine();
-				}
-
-			}
-
-			if (this.tabuleiro[linha][coluna] == null || this.tabuleiro[linha][coluna].equals("[_]")) {
-				this.tabuleiro[linha][coluna] = "[O]";
-				mostrarTabuleiro();
-				verificarJogada();
-				verificar = true;
-			} else {
-				System.out.println("Esse campo ja foi usado");
-
-				sc.nextLine();
-
-			}
-
-		}
-	}
-
-	public void jogada9() {
-
-		boolean verificar = false;
-
-		while (verificar == false) {
-			boolean verificarLinha = false;
-			boolean verificarColuna = false;
-			int linha = 0;
-			int coluna = 0;
-
-			while (verificarLinha == false) {
-				System.out.println("Digite a linha");
-				try {
-					linha = sc.nextInt();
-					if (linha > 2 || linha < 0) {
-						System.err.println("Digite um valor de 0 a 2");
-					} else {
-						verificarLinha = true;
-					}
-				} catch (Exception e) {
-					System.err.println("Digite um valor numerico");
-					sc.nextLine();
-				}
-
-			}
-
-			while (verificarColuna == false) {
-				System.out.println("Digite a Coluna");
-				try {
-					coluna = sc.nextInt();
-					if (coluna > 2 || coluna < 0) {
-						System.err.println("Digite um valor de 0 a 2");
-					} else {
-						verificarColuna = true;
-					}
-				} catch (Exception e) {
-					System.err.println("Digite um valor numerico");
-					sc.nextLine();
-				}
-
-			}
-
-			if (this.tabuleiro[linha][coluna] == null || this.tabuleiro[linha][coluna].equals("[_]")) {
-				this.tabuleiro[linha][coluna] = "[X]";
-				mostrarTabuleiro();
-				verificar = true;
-				verificarJogada();
-			} else {
-				System.out.println("Esse campo ja foi usado");
-
-				sc.nextLine();
+				verificarLinha = false;
+				verificarColuna = false;
 
 			}
 
