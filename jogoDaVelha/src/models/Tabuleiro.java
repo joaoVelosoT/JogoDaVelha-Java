@@ -160,6 +160,7 @@ public class Tabuleiro {
 			System.out.println("");
 			montarTabuleiro();
 			sc.nextLine();
+			
 			// limparTela();
 		}
 		if (this.tabuleiro[1][0] == "[O]" && this.tabuleiro[1][1] == "[O]" && this.tabuleiro[1][2] == "[O]") {
